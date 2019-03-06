@@ -9,7 +9,7 @@
 
 ## Seed-Data
 * Bei der ersten Ausführung werden 3 Users (user1, user2, user3) mit dem Passwort "1234" erstellt.
-* Zusätzlich werden ca. 1500 zufällige Transaktionen über eine längeren Zeitraum erstellt.
+* Zusätzlich werden ca. 1500 zufällige Transaktionen über einen längeren Zeitraum erstellt.
 
 ## Server API Dokumentation
 Hinweis: Bei falschen Request-Daten wird ein 400, 404 oder 500 HTTP Status zurückgegeben.
@@ -30,7 +30,7 @@ result:
 ```
 
 #### url: /auth/login
-Sucht nach den angegebenen Login und überprüft das spezifizierte Passwort. Gibt das JWT Token sowie den gefundenen Account zurück, falls der User gefunden wurde - ansonsten wird der Request mit einem Status-Code 404 beantwortet.
+Sucht nach dem angegebenen Login und überprüft das spezifizierte Passwort. Gibt das JWT Token sowie den gefundenen Account zurück, falls der User gefunden wurde - ansonsten wird der Request mit einem Status-Code 404 beantwortet.
 ```
 method: post
 body: {login, password}
