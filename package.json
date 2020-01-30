@@ -3,10 +3,11 @@
   "version": "0.2.1",
   "private": true,
   "scripts": {
-    "start": "node --experimental-modules --es-module-specifier-resolution=node bin/www.mjs",
+    "start": "node --experimental-modules --es-module-specifier-resolution=node bin/www.js",
     "serve": "npm run start",
     "test": "ava"
   },
+  "type": "module",
   "dependencies": {
     "body-parser": "~1.19.0",
     "cookie-parser": "^1.4.4",
@@ -27,8 +28,11 @@
       "--experimental-modules",
       "--es-module-specifier-resolution=node"
     ],
+    "require": [
+      "./test/setup.js"
+    ],
     "files": [
-      "./test/spec/*.spec.mjs"
+      "./test/spec/*.spec.js"
     ]
   }
 }
