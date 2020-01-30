@@ -1,10 +1,10 @@
-# WED 3 - Node Server für Mini Project (Finance Portal)
+# Web Engineering & Design 3 - Node Server für Testat (Finance Portal)
 
 ## Getting Started
-* [Node.js](https://nodejs.org/en/) ≥ 9 muss auf Ihrer Entwicklungsmaschine installiert sein.
+* [Node.js](https://nodejs.org/en/) ≥ 12 muss auf Ihrer Entwicklungsmaschine installiert sein.
 * Der Server liegt als node Paket vor (siehe package.json).
 * Installation erfolgt per Aufruf von *npm install* im Root-Folder des Repositories (Folder des package.json Files).
-* Server kann über *npm run start* gestartet werden (alternativ über WebStorm: WebStorm -> Run -> Edit Configurations -> Node Parameters: *--experimental-modules*). Falls Sie ohne die experimental ES6 Modules arbeiten möchten (z.B. unter Node 8), müssen Sie den Startvorgang des Servers im package.json file anpassen:  ```"start": "node -r @std/esm bin/www.mjs",```.
+* Server kann über *npm run start* gestartet werden. Falls Sie ohne die experimental ES6 Modules arbeiten möchten (z.B. unter Node 8), müssen Sie den Startvorgang des Servers im package.json file anpassen:  ```"start": "node -r @std/esm bin/www.js",```.
 * Server wird anschliessend auf [Port 3000](http://localhost:3000) ausgeführt.
 
 ## Seed-Data

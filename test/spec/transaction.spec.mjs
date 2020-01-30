@@ -1,7 +1,7 @@
 import test from 'ava';
-import {config} from '../config';
 import {userService} from '../services/userService';
 import {accountService} from '../services/accountService';
+import '../setup';
 
 test.serial("register should return true", async (t) => {
     let user1 = await userService.register("mgfeller", "Michael", "Gfeller", "1234");

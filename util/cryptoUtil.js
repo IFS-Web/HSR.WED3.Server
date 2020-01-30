@@ -1,9 +1,9 @@
-import crypto from 'crypto';
+import {createHmac} from 'crypto';
 import jwt from 'jsonwebtoken';
 
 
 function hashPwd(pwd){
-  return crypto.createHmac('sha256', "secret!") //more information: https://nodejs.org/api/crypto.html
+  return createHmac('sha256', "secret!") //more information: https://nodejs.org/api/crypto.html
     .update(pwd)
     .digest('hex');
 }
