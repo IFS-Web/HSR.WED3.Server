@@ -104,7 +104,7 @@ result:
 }
 ```
 
-#### url: /accounts/transactions?accounts/transactions?fromDate=2016-05-11T02:00:00.000Z&toDate=2016-12-11T02:00:00.000Z&count=1&skip=1
+#### url: /accounts/transactions?fromDate=2016-05-11T02:00:00.000Z&toDate=2016-12-11T02:00:00.000Z&count=1&skip=1
 Ruft sämtliche Transaktionen vom *User assoziiert mit dem angegebenen Bearer Token* ab und filtert diese gemäss der Parametrisierung.
 **Wichtig:** Resultate werden nur zurückgeben, falls *count* oder *fromDate und toDate* angegeben wurden.
 ```
