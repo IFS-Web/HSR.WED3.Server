@@ -7,7 +7,7 @@ const initialAccountData = [
     { accountNr: null, login: "user3", firstname: "Kevin", lastname: "Schmidt", password: "1234" }
 ];
 
-const startDate = +(new Date(2017, 6, 5));
+const startDate = +(new Date(2019, 8, 7));
 
 const randomTransactionAmount = 150; // $
 const maxTransactions = 1500;
